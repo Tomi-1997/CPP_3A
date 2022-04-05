@@ -50,14 +50,14 @@ namespace zich
     {
     return *this;
     }
-    // zich::Matrix& operator*(const double num)
-    // {
-
-    // }
-    // zich::Matrix& operator*(const Matrix& other)
-    // {
-
-    // }
+    Matrix& Matrix::operator*(double num)
+    {
+    return *this;
+    }
+    Matrix& Matrix::operator*( const Matrix& other)
+    {
+        return *this;
+    }
     // zich::Matrix& operator=(const Matrix& other)
     // {
 
@@ -71,28 +71,28 @@ namespace zich
 
     // }
     // // Comparison
-    // bool zich::Matrix operator==(const Matrix& other)
-    // {
-
-    // }
-    // zich::Matrix& operator!=(const Matrix& other)
-    // {
-
-    // }
-    // zich::Matrix& operator>(const Matrix& other)
-    // {
-
-    // }
-    // zich::Matrix& operator>=(const Matrix& other)
-    // {
-
-    // }
-    // zich::Matrix& operator<(const Matrix& other)
-    // {
-
-    // }
-    // zich::Matrix& operator<=(const Matrix& other)
-    // {
-
-    // }
+    bool Matrix::operator==(const Matrix& other)
+    {
+        return true;
+    }
+    bool Matrix::operator!=(const Matrix& other)
+    {
+        return true;
+    }
+    bool Matrix::operator>(const Matrix& other)
+    {
+        return true;
+    }
+    bool Matrix::operator>=(const Matrix& other)
+    {
+        return true;
+    }
+    bool Matrix::operator<(const Matrix& other)
+    {
+        return true;
+    }
+    bool Matrix::operator<=(const Matrix& other)
+    {
+        return true;
+    }
 }
