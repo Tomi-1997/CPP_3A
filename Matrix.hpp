@@ -22,6 +22,10 @@ namespace zich
             // Modifications, A and B are matrices, c is a scalar.
             Matrix& operator+(const Matrix& other); // A + B
             //Matrix& operator+();                          // A + 1
+
+
+            // used https://www.tutorialspoint.com/cplusplus/unary_operators_overloading.htm
+            // for - unary operation
             Matrix& operator-(const Matrix& other) ;       // A - B
             Matrix& operator-();
             Matrix& operator*(const double num);          // A * c
